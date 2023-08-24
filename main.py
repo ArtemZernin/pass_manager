@@ -31,8 +31,8 @@ def decode_message(passw: str, coded_message: str) -> str:
     return message
 
 if __name__ == "__main__":
-    s = str(input())
-    passw = str(input())
+    s = str(input('message: '))
+    passw = str(input('password: '))
     out = encode_message(passw, s)
     print(out)
     print(decode_message(passw, out))
